@@ -23,11 +23,7 @@ UZ_TZ = timezone(timedelta(hours=TIMEZONE_OFFSET_HOURS))
 
 DAY_NUM_EMOJI = ["1⃣", "2⃣", "3⃣", "4⃣", "5⃣", "6⃣", "7⃣"]
 SQUARES = ["🟥", "🟧", "🟩", "🟦", "🟪", "⬜️", "🟫"]
-
-# DB
 db = DB(DB_PATH)
-
-# BOT
 bot = Bot(BOT_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
 def day_symbol(weekday_idx: int, att_row, hw_row) -> str:
